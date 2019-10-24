@@ -70,4 +70,55 @@ body {
   font-family: 'PT Sans Narrow', sans-serif;
   letter-spacing: 1.2px;
 }
+
+/*page title, subtitle and button*/
+.page-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: center;
+  /*.btn {
+    position: relative;
+    height: 45px;
+    width: 220px;
+    display: inline-block;
+    background-color: #fed136;
+
+  }*/
+}
+
+.page-text .page-subtitle {
+  font-weight: 400;
+  line-height: 1.8em;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-style: italic;
+  letter-spacing: 1.2px;
+}
+
+.page-text .page-title {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 1.7px;
+  margin-bottom: 35px;
+}
+
+.page-text .btn-one {
+  cursor: pointer;
+  padding: 15px 40px;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  background-color: #fed136;
+  letter-spacing: 1px;
+}
 /*# sourceMappingURL=style.css.map */
