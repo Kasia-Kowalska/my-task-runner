@@ -1,0 +1,79 @@
+/*font-family: 'Parisienne', cursive;
+    font-family: 'PT Sans Narrow', sans-serif;*/
+
+$color-one: white;
+$color-two: black;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*header*/
+
+body {
+  width: 100%;
+  height: 100%;
+
+}
+
+.features {
+  position: relative;
+}
+
+.image {
+  position: relative;
+  height: 700px;
+  min-width: 1349px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+  }
+
+  .dress {
+    position: absolute;
+    object: cover;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+.navigation {
+  position: absolute;
+  padding-top: 50px;
+  top: 0;
+
+  .brand {
+    padding-left: 150px;
+    color: #fed136;
+    font-size: 22px;
+    font-family: 'Parisienne', cursive;
+    font-weight: 500;
+  }
+
+  .menu-list {}
+
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu li a {
+    padding-left: 35px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-one;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 1.2px;
+  }
+}
