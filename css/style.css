@@ -228,4 +228,49 @@ body {
   font-family: "PT Sans Narrow", sans-serif;
   letter-spacing: 1px;
 }
+
+/*media*/
+@media (max-width: 576px) {
+  .row {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .row-one {
+    line-height: 70%;
+  }
+  .image {
+    min-height: 1000px;
+  }
+  .brand {
+    margin-bottom: 30px;
+  }
+  .page-subtitle {
+    margin: 125px 0 10px;
+  }
+  .col-portfolio {
+    max-width: 85%;
+  }
+  .section-two {
+    max-width: 75%;
+    text-align: center;
+    margin-left: 15px;
+  }
+  .menu {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    line-height: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
