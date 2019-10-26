@@ -140,6 +140,7 @@ body {
 .services .row {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 145px;
 }
 
 .services .box {
@@ -180,8 +181,8 @@ body {
 /*portfolio*/
 .portfolio {
   background-color: #f7f7f7;
-  width: 100%;
-  margin: 140px 0 45px 45px;
+  margin-left: 45px;
+  margin-bottom: 45px;
 }
 
 .portfolio .section-main {
