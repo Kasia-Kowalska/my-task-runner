@@ -240,11 +240,7 @@ body {
 
 /*media*/
 
-@media (max-width: 576px) {
-
-  .row {
-    flex-direction: column;
-  }
+@media (max-width: 767px) {
 
   .row-one {
     line-height: 70%;
@@ -260,7 +256,11 @@ body {
 
   .page-subtitle {
     margin: 125px 0 10px;
+    font-size: 20px;
+  }
 
+  .page-text {
+    text-align: center;
   }
 
   .col-portfolio {
@@ -274,17 +274,7 @@ body {
   }
 
   .menu {
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 30px;
-  }
-}
-
-@media (max-width: 576px) {
-
-  .menu {
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 30px;
+    display: flex;
+    flex: row;
   }
 }
