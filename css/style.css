@@ -32,7 +32,8 @@ body {
 
 .image .dress {
   position: absolute;
-  object: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -151,7 +152,7 @@ body {
   font-family: "PT Sans Narrow", sans-serif;
 }
 
-.services .test-i {
+.services .box-i {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
