@@ -242,8 +242,16 @@ body {
 
 @media (max-width: 767px) {
 
-  .row-one {
-    line-height: 70%;
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-left: 0;
+  }
+
+  .menu {
+    margin-right: 30px;
   }
 
   .image {
@@ -255,12 +263,12 @@ body {
   }
 
   .page-subtitle {
-    margin: 125px 0 10px;
-    font-size: 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
   }
 
   .page-text {
-    text-align: center;
+    margin: 0 auto;
   }
 
   .col-portfolio {
@@ -273,8 +281,22 @@ body {
     margin-left: 15px;
   }
 
-  .menu {
-    display: flex;
-    flex: row;
+  .section-main {
+    margin: 0 auto;
   }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-text {
+    margin: 0 auto;
+  }
+
 }

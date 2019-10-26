@@ -231,13 +231,19 @@ body {
 }
 
 /*media*/
-@media (max-width: 576px) {
-  .row {
-    -ms-flex-direction: column;
-        flex-direction: column;
+@media (max-width: 767px) {
+  .menu-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    font-size: 12px;
+    padding-left: 0;
   }
-  .row-one {
-    line-height: 70%;
+  .menu {
+    margin-right: 30px;
   }
   .image {
     min-height: 1000px;
@@ -246,7 +252,11 @@ body {
     margin-bottom: 30px;
   }
   .page-subtitle {
-    margin: 125px 0 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .page-text {
+    margin: 0 auto;
   }
   .col-portfolio {
     max-width: 85%;
@@ -256,22 +266,21 @@ body {
     text-align: center;
     margin-left: 15px;
   }
-  .menu {
+  .section-main {
+    margin: 0 auto;
+  }
+  .row {
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-align: start;
-        align-items: flex-start;
-    line-height: 30px;
+  }
+  .container {
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 576px) {
-  .menu {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-align: start;
-        align-items: flex-start;
-    line-height: 30px;
+@media (max-width: 1024px) {
+  .page-text {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
