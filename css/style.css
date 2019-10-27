@@ -16,24 +16,26 @@ body {
   position: relative;
 }
 
-.image {
+.features .image {
   position: relative;
-  max-height: 700px;
+  line-height: 0;
 }
 
-.image:after {
+.features .image:after {
   content: '';
   position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
 }
 
-.image .dress {
-  position: absolute;
-  height: 100%;
+.dress {
+  height: 500px;
   width: 100%;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .navigation {
@@ -243,8 +245,8 @@ body {
   .menu {
     margin-right: 30px;
   }
-  .image {
-    min-height: 1000px;
+  .dress {
+    height: 800px;
   }
   .brand {
     margin-bottom: 30px;
