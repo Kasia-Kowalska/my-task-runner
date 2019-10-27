@@ -44,34 +44,31 @@ body {
   top: 0;
 }
 
-.navigation .brand {
-  padding-left: 150px;
+.brand {
+  padding-left: 55px;
   color: #fed136;
   font-size: 22px;
   font-family: 'Parisienne', cursive;
   font-weight: 500;
 }
 
-.navigation .menu {
+.menu {
   list-style: none;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.navigation .menu li a {
-  padding-left: 35px;
-}
-
-.navigation a {
+a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   font-family: "PT Sans Narrow", sans-serif;
   letter-spacing: 1.2px;
+  padding-left: 35px;
 }
 
 /*page title, subtitle and button*/
@@ -89,7 +86,7 @@ body {
   text-align: center;
 }
 
-.page-text .page-subtitle {
+.page-subtitle {
   font-weight: 400;
   line-height: 1.8em;
   text-transform: capitalize;
@@ -98,7 +95,7 @@ body {
   letter-spacing: 1.2px;
 }
 
-.page-text .page-title {
+.page-title {
   font-size: 60px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -237,6 +234,13 @@ body {
   .page-text {
     margin: 0 auto;
   }
+  .portfolio {
+    margin-left: 0;
+  }
+  .row {
+    -ms-flex-align: center;
+        align-items: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -245,26 +249,33 @@ body {
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
     font-size: 12px;
     padding-left: 0;
+    padding-right: 0;
   }
   .menu {
     margin-right: 30px;
   }
   .dress {
-    height: 800px;
+    height: 500px;
   }
   .brand {
     margin-bottom: 30px;
   }
+  .navigation {
+    padding-top: 20px;
+  }
   .page-subtitle {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
+  .page-title {
+    font-size: 45px;
+  }
   .page-text {
-    margin: 70px auto 0;
+    margin: 20px auto 0;
   }
   .col-portfolio {
     max-width: 85%;
@@ -284,12 +295,47 @@ body {
   .container {
     margin: 0 auto;
   }
+  a {
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 420px) {
+  .menu {
+    margin-right: 0;
+  }
+  .menu-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .dress {
+    height: 500px;
+  }
   .btn-one {
     display: block;
-    padding: 15px 30px;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  a {
+    padding-left: 15px;
+  }
+  .brand {
+    padding-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .dress {
+    height: 600px;
   }
 }
 /*# sourceMappingURL=style.css.map */
