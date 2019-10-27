@@ -58,6 +58,8 @@ body {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .navigation .menu li a {
@@ -104,7 +106,7 @@ body {
   margin-bottom: 35px;
 }
 
-.page-text .btn-one {
+.btn-one {
   cursor: pointer;
   padding: 15px 40px;
   list-style: none;
@@ -231,6 +233,12 @@ body {
 }
 
 /*media*/
+@media (max-width: 1024px) {
+  .page-text {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 767px) {
   .menu-list {
     display: -ms-flexbox;
@@ -256,7 +264,7 @@ body {
     margin-bottom: 20px;
   }
   .page-text {
-    margin: 0 auto;
+    margin: 70px auto 0;
   }
   .col-portfolio {
     max-width: 85%;
@@ -278,9 +286,10 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
-  .page-text {
-    margin: 0 auto;
+@media (max-width: 420px) {
+  .btn-one {
+    display: block;
+    padding: 15px 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -65,6 +65,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .menu li a {
@@ -111,19 +112,19 @@ body {
     word-spacing: 1.7px;
     margin-bottom: 35px;
   }
-
-  .btn-one {
-
-    cursor: pointer;
-    padding: 15px 40px;
-    list-style: none;
-    text-decoration: none;
-    color: $color-one;
-    text-transform: uppercase;
-    background-color: #fed136;
-    letter-spacing: 1px;
-  }
 }
+
+.btn-one {
+  cursor: pointer;
+  padding: 15px 40px;
+  list-style: none;
+  text-decoration: none;
+  color: $color-one;
+  text-transform: uppercase;
+  background-color: #fed136;
+  letter-spacing: 1px;
+}
+
 
 /*services*/
 
@@ -236,6 +237,12 @@ body {
 
 /*media*/
 
+@media (max-width: 1024px) {
+  .page-text {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 767px) {
 
   .menu-list {
@@ -264,7 +271,7 @@ body {
   }
 
   .page-text {
-    margin: 0 auto;
+    margin: 70px auto 0;
   }
 
   .col-portfolio {
@@ -290,8 +297,11 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
-  .page-text {
-    margin: 0 auto;
+@media (max-width: 420px) {
+
+  .btn-one {
+    display: block;
+    padding: 15px 30px;
   }
+
 }
