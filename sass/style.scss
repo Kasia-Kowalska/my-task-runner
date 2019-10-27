@@ -1,4 +1,4 @@
-/*font-family: 'Parisienne', cursive;
+/*fonts which i use in the project  -> font-family: 'Parisienne', cursive;
     font-family: 'PT Sans Narrow', sans-serif;*/
 
 $color-one: white;
@@ -26,24 +26,22 @@ body {
 
 .image {
   position: relative;
-  height: 700px;
-  min-width: 1349px;
+  max-height: 700px;
+}
 
-  &:after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, .5);
-  }
+&:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+}
 
-  .dress {
-    position: absolute;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-  }
+.dress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 }
 
 .navigation {

@@ -1,4 +1,4 @@
-/*font-family: 'Parisienne', cursive;
+/*fonts which i use in the project  -> font-family: 'Parisienne', cursive;
     font-family: 'PT Sans Narrow', sans-serif;*/
 /* color for button and icon*/
 * {
@@ -18,8 +18,7 @@ body {
 
 .image {
   position: relative;
-  height: 700px;
-  min-width: 1349px;
+  max-height: 700px;
 }
 
 .image:after {
@@ -32,8 +31,6 @@ body {
 
 .image .dress {
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
   height: 100%;
   width: 100%;
   background-size: cover;
